@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>sky</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .sky {
+        height: 100vh;
+        width: 500%;
+        background-image: url("https://ganeshdutt100.github.io/Animation/sky.jpg");
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 1;
+        background-repeat: repeat-x;
+
+        animation: sky 10s linear infinite;
+      }
+      .sky img {
+        background-repeat: repeat-x;
+        /* background-size: cover; */
+      }
+
+      @keyframes sky {
+        100% {
+          transform: translateX(-1400px);
+        }
+      }
+      .airoplane {
+        width: 600px;
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 2;
+      }
+      .airoplane img {
+        width: 100%;
+        animation: airoplane 2s all linear infinite;
+      }
+      @keyframes airoplane {
+        100% {
+          transform: translateY(-1px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sky"></div>
+      <div class="main-text">
+        <p></p>
+      </div>
+      <div class="airoplane">
+        <img
+          src="./Screenshot_2023-12-17_145504-removebg-preview (1).png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
